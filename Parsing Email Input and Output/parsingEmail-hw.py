@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+#The script parses one email account and take the new email count and send it to the other email. I also used IFTTT to post a facebook status once the second email receives the new email count notice.
+
 import feedparser		
 import time	
 import subprocess
@@ -7,7 +9,7 @@ import socket
 from email.mime.text import MIMEText
 
 user='yumengsystems'
-passwd='yumengsystems03'
+passwd=''
 emailNum = 0
 
 while True: 	
@@ -23,9 +25,9 @@ while True:
     emailcount(newmails) 
     time.sleep(5)
 
-to = 'yumengsystems@gmail.com'
+to = 'wangy594@newschool.com'
 gmail_user = 'yumengsystems@gmail.com'
-gmail_password = 'yumengsystems03'
+gmail_password = ''
 smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
 smtpserver.ehlo()
 smtpserver.starttls()
