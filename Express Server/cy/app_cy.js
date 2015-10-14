@@ -41,7 +41,7 @@ io.sockets.on('connection', function (socket) {
 
             //call function picture
             // if(buttonState == 1) {
-            //     takePic();
+                 takePic();
             // }
 
             socket.emit('toScreen', { button: buttonState, sensor: sensorVal });     
